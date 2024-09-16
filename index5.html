@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/broadway" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/broadway');
+        h1{
+            color: blue;
+            font-family: 'Broadway', sans-serif;
+        }
+        /*  */
+        body{
+            background-image: url("https://wallpapers.com/images/featured/san-francisco-skyline-background-1ihpn12wdtk5xa9h.jpg");
+        }
+        div.fixed{
+            border: 5px solid;
+            margin: 10px;
+            padding: 10px;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 300px;
+        }
+        div.stickey{
+            border: 5px solid;
+            position: sticky;
+            top: 0;
+        }
+        p {
+            color: white;
+        }
+        .container{
+            /* เรียงตามแนวนอน แนวเดียว */
+            display: flex;
+            /* ปรับให้เป็นแบบ column */
+            flex-direction: column;
+        }
+        .flex-ex1 {
+            border: 2px solid;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        .grid-ex1{
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .transform-ex{
+            transform: translate(50px, 200px);
+            transform: scale(100%);
+            transition: all;
+            transition-duration: 0.2s;
+        }
+        .transform-ex:hover{
+            transform: translate(50px, 200px);
+            transform: rotate(45deg);
+            /* transform: scale(200%); */
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+        <h1>Welcome to My Web Page</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat animi, eveniet itaque officia quasi quis qui corporis voluptas illum at, dolores pariatur dolore consequatur optio sit sunt suscipit ex enim.</p>
+    </div>
+        
+    <div class="stickey">
+        <h1>Stickey div</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat animi, eveniet itaque officia quasi quis qui corporis voluptas illum at, dolores pariatur dolore consequatur optio sit sunt suscipit ex enim.</p>
+    </div>
+    <div class="container">
+        <h1>HELLO</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A cum amet sunt fuga temporibus dolore voluptates magni quae necessitatibus expedita! Vero, quibusdam enim. Expedita, pariatur! Doloribus eaque adipisci illo nulla.</p>
+        <button>Clicke me!</button>
+    </div>
+    <div class="flex-ex1">
+        <p class="transform-ex">content</p>
+        <p>content</p>
+        <p>content</p>
+    </div>
+    <div class="grid-ex1">
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+    </div>
+
+
+    
+</body>
+</html>

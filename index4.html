@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: #e3e4e6;
+        }
+        input {
+            border: 1px solid blue;
+            border-radius: 3px;
+        }
+        table, td, th{
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+        .header{
+            top: 0;
+            background-color:gold;
+            padding: 2%;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .header-element{
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+        }
+        .header-element span a{
+            color: black;
+            text-decoration: none;
+        }
+        .header-element span a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        .about{
+            margin-top: 3%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .about-content{
+            background-color: white;
+            border: 1px;
+            border-radius: 10px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .teacher{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .teacher-block{
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-items: center;
+        }
+        .block1{
+            display: inline;
+            background-color: white;
+            padding: 5%; 
+            width: 50%; 
+            border-radius: 10px;
+            box-shadow:gray 2px 2px; 
+            justify-content: center;
+        }
+        .block2{
+            background-color: white;
+            padding: 5%;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: grey 2px 2px;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Project</h1>
+        <div class="header-element">
+            <span><a href="#About me">About</a></span>
+            <span><a href="#My Favorite Teachers">About my Teacher</a></span>
+        </div>
+    </div>
+    
+
+    <div class="about">
+        <h2 id ="About me">About Me</h2>
+        <div class="about-content">
+            <img src="" alt="img">
+            <p style="margin-left: 20px;">
+                Hello! I'm a web developer with a passion for creating beautiful and functional websites. I specialize in front-end development and have experience with various technologies including HTML, CSS, JavaScript, and more. Feel free to browse my portfolio and get in touch if you'd like to work together!
+            </p>
+        </div>
+    </div>
+
+    <div class="teacher">
+        <h2 id = "My Favorite Teachers">My Favorite Teachers</h2>
+        <div class="teacher-block">
+            <div class="block1">
+                <img src="https://www.science.kmitl.ac.th/new/_next/image?url=https%3A%2F%2Fminio.cs-kmitl.dedyn.io%2Fwebsite%2FTeacher-images%2FCom%2FTSuntana.png&w=828&q=75" alt="suntana" width="100">
+                <h4>Aj.Suntana</h4>
+                <p>Professional Data Structure</p>
+            </div>
+            <div class="block2">
+                <img src="https://www.science.kmitl.ac.th/new/_next/image?url=https%3A%2F%2Fminio.cs-kmitl.dedyn.io%2Fwebsite%2FTeacher-images%2FCom%2FTMo.png&w=1920&q=75" alt="mo" width="100px">
+                <h4>Aj.Mo</h4>
+                <p>Professional about cat</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
